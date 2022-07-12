@@ -58,6 +58,7 @@ void B4CustomPhysics::ConstructParticle(){
 void B4CustomPhysics::ConstructProcess()
 {
     addCustomPhysics();
+	ConstructGeneral();
 }
 
 void B4CustomPhysics::ConstructExotics()
