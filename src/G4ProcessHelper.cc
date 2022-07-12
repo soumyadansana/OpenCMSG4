@@ -118,7 +118,7 @@ G4ProcessHelper::G4ProcessHelper(){
     if(particle!=0&&table!=0&&name.find("cloud")>name.size())
       {
 	particle->SetPDGLifeTime(hadronlifetime*s);
-	particle->SetPDGStable(true);
+	particle->SetPDGStable(false);
 	G4cout<<"Lifetime of: "<<name<<" set to: "<<particle->GetPDGLifeTime()/s<<" s."<<G4endl;
 	G4cout<<"Stable: "<<particle->GetPDGStable()<<G4endl;
       }
