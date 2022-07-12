@@ -133,7 +133,7 @@ void CustomParticleFactory::loadCustomParticles()
       m_particles.insert(particle);
     }
   configFile.close();
-  /*
+
   // Reading decays from file
   std::vector<std::vector<std::string>* > decays;
   std::ifstream decayFile("decays.txt");
@@ -178,7 +178,7 @@ void CustomParticleFactory::loadCustomParticles()
     	  (*part)->SetDecayTable(table);
 
 	}
-    } */
+    }
   return;    
 }
 
