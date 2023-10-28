@@ -19,3 +19,5 @@ Step 5: There will be issues with libraries not found -> Fix by creating symboli
                   Go through the folder, most likely the .so exists but with different name (eg. /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so) 
                   Create symbolic link to this to the directory where make looks for the link (eg. sudo ln -s /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so /usr/lib/libQtOpenGL.so)
 Step 6: The code should at this point at least compile.
+Step 7: There might be an error - "GenericIon" not found - something like this. Simple fix -> Add ```G4GenericIon::GenericIonDefinition();``` to ConstructNuclei() in PhysicsList()
+ 
